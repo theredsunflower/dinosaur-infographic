@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+html {
+	font-family: 'Quicksand', sans-serif;
+	background-color: #e1e1e1;
+}
+body {
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+}
+h1 {
+	font-family: 'Fredoka One', cursive;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 50px;
+	margin: 10px 0 10px 0;
+}
+
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+}
+h3 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+}
+p {
+	font-family: 'Quicksand', sans-serif;
+}
+button {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 22px;
+	margin: 20px 0 20px 0;
+	padding: 10px 30px 10px 30px;
+	border: none;
+	background-color: #061542;
+	color: white;
+}
+button:hover {
+	background-color: #52840e;
+	cursor: pointer;
+}
+header {
+	background-color: #52840e;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+input, select {
+	padding: 10px;
+	width: 100%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+}
+
+.form-container {
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 5px 5px 10px #a9a7a7;
+	width: 90%;
+	margin: 5%;
+	padding: 20px;
+}
+.combined-input {
+	overflow: auto;
+}
+.combined-input label {
+	width: calc(50% - 10px);
+	float: left;
+	padding: 0;
+}
+#feet-label {
+	margin: 0 10px 0 0;
+}
+#inches-label {
+	margin: 0 0 0 10px;
+}
+.form-container h2 {
+	text-align: center;
+	font-weight: bold;
+}
+.grid-item h2 {
+	font-size: 34px;
+	text-align:;
+}
+#grid {
+	display: none;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.grid-item {
+	background-color: #bcbaba;
+	float: left;
+	width: 100%;
+	margin: 1.5%;
+	padding: 10px;
+	text-align: center;
+}
+.grid-item h2 {
+	font-size: 34px;
+}
+.grid-item p {
+	font-size: 20px;
+}
+.fine-print {
+	text-align: center;
+}
+.button-container {
+	width: 100%;
+	text-align: center;
+}
+#error-message {
+	color: red;
+}
+#refresh {
+	order: 100;
+}
+footer a {
+	color: black;
+	text-decoration: underline;
+}
+footer a:hover {
+	font-weight: bold;
+}
+footer a:visited {
+	color: black;
+}
+@media only screen and (min-width: 800px) {
+	.grid-item {
+		width: calc(91% / 3);
+	}
+	.form-container {
+		background-color: white;
+		width: 40%;
+		margin: 2.5% 30% 2.5% 30%;
+		padding: 20px 50px 20px 50px;
+	}
+}

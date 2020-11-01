@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dinographic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="app.css" rel="stylesheet">
+    <!-- Link to app.js with defer till HTML render -->
+    <script defer src="app.js"></script>
+
+</head>
+<body>
+    <header>
+        <h2>Natural History Museum</h2> 
+        <h1>Dinosaurs</h1>
+        <h3>How do you compare?</h3>
+    </header>
+    <!-- Form to get user input -->
+    <form id="dino-compare">
+        <div class="form-container">
+            <h2>Enter your information to see how you compare to the dinosaurs!</h2>
+            <p><b>Name:</b></p>
+            <input id="name" class="form-field__full" type="name" name="name">
+            <p><b>Height:</b></p>
+            <div class="combined-input">
+                <label id="feet-label"><input id="feet" class="form-field__short" type="number" min="0" value="0" name="feet">Feet</label>
+                <label id="inches-label"><input id="inches" class="form-field__short" type="number" min="0" value="0" name="inches">Inches</label>
+            </div>
+            <p><b>Weight:</b></p>
+            <label><input id="weight" class="form-field__full" type="number" min="0" value="0" name="weight">lbs</label>
+            <p><b>Diet:</b></p>
+            <select id="diet" class="form-field__full" name="diet">
+                <option>Herbavor</option>
+                <option>Omnivor</option>
+                <option>Carnivor</option>
+            </select>
+            <div class="button-container">
+                <p id="error-message"></p>
+                <button id="btn">Compare Me!</button>
+            </div>
+        </div>
+    </form>
+    <!-- .grid to attach tiles to -->
+    <main id="grid"><button id="refresh">Play Again!</button></main>
+    <footer>
+        <!-- Include information source -->
+        <p class="fine-print">Data Sourced from <a href="https://www.wikipedia.org/">Wikipedia.org</a>, all numbers are approximations.</p>
+    </footer>
+</body>
+</html>
